@@ -24,14 +24,19 @@
   </div>
 </details>
 
+## :FN and FP analysis
+<div align="center">
+    <img src="statics/fig6.png" width="80%">
+</div>
+
 ## :computer: Installation
 <details open>
   <summary>Dependency installation steps</summary>
   
   1. **Clone this project and create a conda environment:**
      ```bash
-     git clone https://github.com/TechJots-Liu/CF-SCSNet.git
-     cd CF-SCSNet
+     git clone https://github.com/TechJots-Liu/VT-DCNet.git
+     cd VT-DCNet
      
      conda create -n cf_scsnet python=3.10.9
      conda activate cf_scsnet
