@@ -16,14 +16,11 @@
 </div>
 
 ## :fallen_leaf: Visualization
-<details open>
-  <summary>self-built PWD</summary>
-  <div align="center">
+<div align="center">
     <img src="statics/fig5.png" width="80%">
-  </div>
-</details>
+</div>
 
-## :FN and FP analysis
+## :fallen_leaf: FN and FP analysis
 <div align="center">
     <img src="statics/fig6.png" width="80%">
 </div>
