@@ -20,7 +20,7 @@
 <details open>
   <summary>self-built PWD</summary>
   <div align="center">
-    <img src="statics/visualization.png" width="80%">
+    <img src="statics/fig5.png" width="80%">
   </div>
 </details>
 
