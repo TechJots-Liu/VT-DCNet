@@ -1,5 +1,4 @@
 # Multi-Level Decoupling and Coordination of Text-Guided Visual Representation for UAV-Based Pine Wilt Disease Detection
-![overview](statics/fig1.png)
 ## :evergreen_tree: Overview
 - **Research Background**：Pine Wilt Disease (PWD) poses a devastating threat to global forest ecological security. Accurate detection of infected trees is critical, yet pure visual methods often confuse diseased trees with visually similar objects. Vision-language models can introduce helpful textual prior knowledge, but they generally suffer from interference by task-irrelevant redundant textual information, leading to misaligned cross-modal features. The fundamental challenge is twofold: how to suppress cross-modal redundancy and how to prevent the attenuation of early weak features that are crucial for identifying subtle disease symptoms.
 - <div align="center">
