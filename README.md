@@ -1,5 +1,5 @@
 # Multi-Level Decoupling and Coordination of Text-Guided Visual Representation for UAV-Based Pine Wilt Disease Detection
-![overview](statics/Overall.png)
+![overview](statics/fig1.png)
 ## :evergreen_tree: Overview
 
 - **Research Background**：Pine wilt disease (PWD) is a major forest pest in Jilin Province, posing a severe threat to the pine forest ecosystems.  Traditional ground surveys are inefficient and limited in coverage, urgently requiring remote sensing technologies for large-scale dynamic monitoring.
