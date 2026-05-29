@@ -2,26 +2,20 @@
 ![overview](statics/fig1.png)
 ## :evergreen_tree: Overview
 
-- **Research Background**：Pine Wilt Disease (PWD) poses a devastating threat to global forest ecological security. Accurate detection of infected trees is critical, yet pure visual methods often confuse diseased trees with visually similar objects. Vision-language models can introduce helpful textual prior knowledge, but they generally suffer from interference by task-irrelevant redundant textual information, leading to misaligned cross-modal features. The fundamental challenge is twofold: how to suppress cross-modal redundancy and how to prevent the attenuation of early weak features that are crucial for identifying subtle disease symptoms. 
+- **Research Background**：Pine Wilt Disease (PWD) poses a devastating threat to global forest ecological security. Accurate detection of infected trees is critical, yet pure visual methods often confuse diseased trees with visually similar objects. Vision-language models can introduce helpful textual prior knowledge, but they generally suffer from interference by task-irrelevant redundant textual information, leading to misaligned cross-modal features. The fundamental challenge is twofold: how to suppress cross-modal redundancy and how to prevent the attenuation of early weak features that are crucial for identifying subtle disease symptoms.
+<div align="center">
+    <img src="statics/fig2.png" width="80%">
+</div>
 - **Technical route**：First, pure visual detection confuses infected trees with similar-looking objects. To resolve such confusion, text modality is introduced to provide discriminative semantics. Simultaneously, a global compression strategy removes task-irrelevant redundancy, yielding global semantic guidance fused with text. Second, early weak lesion features are easily lost as the network deepens. To counteract that attenuation, global semantic guidance is leveraged to decouple feature learning, collaboratively strengthening features from two aspects: mining fine-grained details and reactivating subtle early lesion cues. Finally, multi-scale fusion risks re-attenuating the strengthened features. A bidirectional detail-semantic aggregation is therefore applied to preserve these features, thus closing the loop.
 - **Core innovation**：
-  - Task-specific dataset with aligned cross-modal annotations
-  - Coarse-fine dual-granularity labeling framework for imbalanced small targets
-  - Text-driven semantically coupled segmentation network (CF-SCSNet)
+  - We have constructed the first vision-language dataset specifically for PWD detection, which covers four different ecological regions across three typical affected provinces in China and includes UAV remote sensing images captured from multiple perspectives and under various lighting conditions.
+  - Through deep collaborative reasoning between visual features and text semantics, this work overcomes the limitations of existing methods in both cross-modal redundancy suppression and early weak feature enhancement. Extensive experiments on a self-built PWD dataset demonstrate that the proposed VT-DCNet achieves excellent detection performance, excelling particularly in complex scenarios where diseased trees are heavily mixed with the background.
+  - By systematically evaluating the impact of text differing in correlation  on PWD detection, we found that structured text outperformed natural language text in terms of model convergence speed and detection accuracy. These findings indicate that, for scenarios such as UAV-based disease detection, text that structurally integrates spatial orientation and visual attributes can provide more direct and efficient semantic guidance to visual models. 
  
 ## :card_file_box:Datasets
 <div align="center">
-    <img src="statics/dataset.png" width="80%">
+    <img src="statics/fig3.png" width="80%">
 </div>
-  
-## :bar_chart: Model test dataset
-| **Dataset**         | Dataset download |
-| :------------------ | :--------------------- |
-| **self-built PWD** |  |
-| **Public generalization(FramSeg-M)** | [dataset](https://www.selectdataset.com/dataset/b6bd538e3e21259cf6958130ef5ed70a)   |
-| **Public generalization(FramSeg-L)** | [dataset](https://www.selectdataset.com/dataset/b6bd538e3e21259cf6958130ef5ed70a)   |
-| **Public generalization(RRSIS-M)** | [dataset](https://www.selectdataset.com/dataset/5bbd39a0d71020dd530930d9bb39eae7)   |
-| **Public generalization(RRSIS-L)** | [dataset](https://www.selectdataset.com/dataset/5bbd39a0d71020dd530930d9bb39eae7)   |
 
 ## :fallen_leaf: Visualization
 <details open>
