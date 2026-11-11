@@ -144,7 +144,7 @@ def analyze_image(image_name, processed_images):
                         {"type": "text","text":
                          """
 Please carefully examine each pine tree in the image. 
-Describe whether there are any abnormal colors of needles (chlorosis, yellowing, reddish-brown), or local wilting of branches, etc., as early signs of pine wood nematode disease. 
+Describe whether there are any abnormal colors of needles (chlorosis, yellowing, reddish-brown). 
 If no abnormalities are found, please output 'No infected areas detected.' 
 If there is a disease, please describe it in the format as shown below.
 Size classification (proportion of whole image):
@@ -154,7 +154,7 @@ Size classification (proportion of whole image):
 - Small: ≤1%  ← Pay special attention to these (isolated discolored crowns)
 Location zones: left, upper left, lower left, middle, upper middle, lower middle, right, upper right, lower right
 Output format (exactly as below, no extra text):
-Example: There are 3 large infected areas in the upper left, upper right, and lower middle parts of the image (each area accounting for about 2.5%); there is 1 medium infected area in the upper middle part of the image (accounting for about 1.5%); there are 2 small infected areas in the middle part of the image (each area accounting for about 0.2%).
+Example: There are 3 large infected areas in the upper left, upper right, and lower middle parts of the image (each area accounting for about 2.5%); there is 1 medium infected area in the upper middle part of the image (accounting for about 1.5%).
 
 """
 },
