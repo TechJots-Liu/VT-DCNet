@@ -4,8 +4,8 @@ from pathlib import Path
 import numpy as np
 
 # BASE_DIR = Path(__file__).resolve().parent
-PRED_JSON = r"F:\thesis\第二篇\第一次返修\数据集\test1+test2\改名的predictions.json"
-GT_JSON = r"F:\thesis\第二篇\第一次返修\数据集\test1+test2\改名的labels.json"
+PRED_JSON = r".\complex_subset_predictions.json"
+GT_JSON = r".\complex_subset_label.json"
 
 
 def remap_by_file_name(records, name_to_id):
