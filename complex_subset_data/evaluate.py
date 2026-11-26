@@ -166,9 +166,9 @@ def main():
     map_all = float(ap.mean()) if len(ap) else 0.0
 
     print("\n" + "=" * 60)
-    print(f"  mAP50:        {map50:.4f}")
-    print(f"  mAP50-95:     {map_all:.4f}")
-    print(f"  mAP75:        {map75:.4f}")
+    print(f"  mAP50:        {map50:.6f}")
+    print(f"  mAP50-95:     {map_all:.6f}")
+    print(f"  mAP75:        {map75:.6f}")
     print("=" * 60)
 
 
